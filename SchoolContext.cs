@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using StudentManagement.Models;
 
-namespace DefaultNamespace;
+namespace StudentManagement;
+
 
 public class SchoolContext: DbContext
 {

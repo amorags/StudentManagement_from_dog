@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DefaultNamespace;
-
+namespace StudentManagement.Models;
 
 public class Course
 {
