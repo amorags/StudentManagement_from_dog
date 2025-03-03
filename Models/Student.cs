@@ -15,5 +15,7 @@ public partial class Student
 
     public DateTime EnrollmentDate { get; set; }
 
+    public string? MiddleName { get; set; }
+
     public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 }

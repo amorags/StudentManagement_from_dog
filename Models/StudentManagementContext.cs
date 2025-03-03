@@ -38,6 +38,11 @@ public partial class StudentManagementContext : DbContext
             entity.HasOne(d => d.Student).WithMany(p => p.Enrollments).HasForeignKey(d => d.StudentId);
         });
 
+        modelBuilder.Entity<Student>(entity =>
+        {
+            entity.Property(e => e.MiddleName).HasMaxLength(255);
+        });
+
         OnModelCreatingPartial(modelBuilder);
     }
 
