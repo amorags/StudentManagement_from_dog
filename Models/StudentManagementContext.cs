@@ -19,6 +19,8 @@ public partial class StudentManagementContext : DbContext
 
     public virtual DbSet<Enrollment> Enrollments { get; set; }
 
+    public virtual DbSet<Instructor> Instructors { get; set; }
+
     public virtual DbSet<Student> Students { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -27,6 +29,13 @@ public partial class StudentManagementContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Course>(entity =>
+        {
+            entity.HasIndex(e => e.InstructorId, "IX_Courses_InstructorId");
+
+            entity.HasOne(d => d.Instructor).WithMany(p => p.Courses).HasForeignKey(d => d.InstructorId);
+        });
+
         modelBuilder.Entity<Enrollment>(entity =>
         {
             entity.HasIndex(e => e.CourseId, "IX_Enrollments_CourseId");

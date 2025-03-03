@@ -11,5 +11,9 @@ public partial class Course
 
     public int Credits { get; set; }
 
+    public int InstructorId { get; set; }
+
     public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
+
+    public virtual Instructor Instructor { get; set; } = null!;
 }
