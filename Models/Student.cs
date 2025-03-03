@@ -11,7 +11,7 @@ public class Student
     public required string LastName { get; set; }
     public required string Email { get; set; }
     public DateTime EnrollmentDate { get; set; }
-    public DateTime DateOfBirth { get; set; } // ✅ New attribute
+    public DateTime DateOfBirth { get; set; } 
 
     public required ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 }
