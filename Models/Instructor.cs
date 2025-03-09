@@ -11,5 +11,7 @@ public class Instructor
     public required string Email { get; set; }
     public DateTime HireDate { get; set; }
 
+    public Department Department { get; set; }
+    
     public ICollection<Course> Courses { get; set; } = new List<Course>();
 }
