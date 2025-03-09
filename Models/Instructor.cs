@@ -15,5 +15,7 @@ public partial class Instructor
 
     public DateTime HireDate { get; set; }
 
+    public Department? Department { get; set; }
+
     public virtual ICollection<Course> Courses { get; set; } = new List<Course>();
 }

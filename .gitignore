@@ -1,0 +1,51 @@
+# Build files
+bin/
+obj/
+*.dll
+*.exe
+*.log
+*.so
+*.dylib
+*.pdb
+
+# User-specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.rsuser
+*.sln.docstates
+
+# Dependency management
+packages/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment and config files
+.env
+secrets.json
+appsettings.Development.json
+
+# EF Migrations
+Migrations/*.sql
+Migrations/*.resx
+Migrations/*.designer.cs
+
+# Database files
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Generated files
+*.g.cs
+*.g.i.cs
+*.generated.cs
+*.tmp
+*.bak
+
+# Logs
+logs/
+*.log
+**/log/

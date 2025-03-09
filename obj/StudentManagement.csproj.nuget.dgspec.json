@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olive\\git\\school\\StudentManagement\\StudentManagement.csproj": {}
+    "C:\\Users\\alexs\\Documents\\GitHub\\StudentManagement_from_dog\\StudentManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olive\\git\\school\\StudentManagement\\StudentManagement.csproj": {
+    "C:\\Users\\alexs\\Documents\\GitHub\\StudentManagement_from_dog\\StudentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olive\\git\\school\\StudentManagement\\StudentManagement.csproj",
+        "projectUniqueName": "C:\\Users\\alexs\\Documents\\GitHub\\StudentManagement_from_dog\\StudentManagement.csproj",
         "projectName": "StudentManagement",
-        "projectPath": "C:\\Users\\olive\\git\\school\\StudentManagement\\StudentManagement.csproj",
-        "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olive\\git\\school\\StudentManagement\\obj\\",
+        "projectPath": "C:\\Users\\alexs\\Documents\\GitHub\\StudentManagement_from_dog\\StudentManagement.csproj",
+        "packagesPath": "C:\\Users\\alexs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexs\\Documents\\GitHub\\StudentManagement_from_dog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexs\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
