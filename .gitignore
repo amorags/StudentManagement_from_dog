@@ -27,10 +27,6 @@ yarn-error.log
 secrets.json
 appsettings.Development.json
 
-# EF Migrations
-Migrations/*.sql
-Migrations/*.resx
-Migrations/*.designer.cs
 
 # Database files
 *.mdf

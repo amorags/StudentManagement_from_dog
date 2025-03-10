@@ -7,7 +7,7 @@ public class Course
 {
     public int Id { get; set; }
     public required string Title { get; set; }
-    public int Credits { get; set; }
+    public decimal Credits { get; set; }
 
     public int InstructorId { get; set; }  
     public required Instructor Instructor { get; set; }  
