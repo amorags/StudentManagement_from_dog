@@ -58,7 +58,7 @@ namespace StudentManagement.Migrations
                     b.Property<decimal>("Budget")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("DepartmentHeadId")
+                    b.Property<int>("DepartmentHeadId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -70,9 +70,7 @@ namespace StudentManagement.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DepartmentHeadId")
-                        .IsUnique()
-                        .HasFilter("[DepartmentHeadId] IS NOT NULL");
+                    b.HasIndex("DepartmentHeadId");
 
                     b.ToTable("Departments");
                 });
@@ -179,8 +177,10 @@ namespace StudentManagement.Migrations
             modelBuilder.Entity("StudentManagement.Models.Department", b =>
                 {
                     b.HasOne("StudentManagement.Models.Instructor", "DepartmentHead")
-                        .WithOne("Department")
-                        .HasForeignKey("StudentManagement.Models.Department", "DepartmentHeadId");
+                        .WithMany("HeadedDepartments")
+                        .HasForeignKey("DepartmentHeadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("DepartmentHead");
                 });
@@ -213,8 +213,7 @@ namespace StudentManagement.Migrations
                 {
                     b.Navigation("Courses");
 
-                    b.Navigation("Department")
-                        .IsRequired();
+                    b.Navigation("HeadedDepartments");
                 });
 
             modelBuilder.Entity("StudentManagement.Models.Student", b =>
